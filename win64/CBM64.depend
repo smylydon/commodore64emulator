@@ -1,0 +1,205 @@
+# depslib dependency file v1.0
+1150486730 c:\mycode\win64\cbm64.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<SDL.h>
+	"gfx.h"
+	"gui.h"
+	"AddressBus.h"
+	"M6510.h"
+	"M6569.h"
+	"M6526.h"
+	"M6581.h"
+	"tape.h"
+
+1143963842 c:\mycode\win64\cbm64.h
+
+1144962377 c:\mycode\win64\m6510.h
+
+1145085686 c:\mycode\win64\addressbus.h
+
+1144994137 c:\mycode\win64\m6569.h
+
+1144996483 c:\mycode\win64\m6526.h
+
+1144130076 c:\mycode\win64\m6581.h
+
+1145085685 c:\mycode\win64\m6510.c
+	"CBM64.h"
+	"AddressBus.h"
+	"Disa.h"
+	"Admodes.h"
+	"Opcodes.h"
+
+1145598105 c:\mycode\win64\opcodes.h
+
+1144218973 c:\mycode\win64\admodes.h
+
+1145250027 c:\mycode\win64\m6526.c
+	"AddressBus.h"
+	"CBM64.h"
+
+1150055956 c:\mycode\win64\m6569.c
+	"AddressBus.h"
+	"CBM64.h"
+	"gfx.h"
+
+1144220075 c:\mycode\win64\m6581.c
+
+1145046469 c:\mycode\win64\addressbus.c
+	"gfx.h"
+	"CBM64.h"
+	"M6510.h"
+	"M6569.h"
+	"M6526.h"
+	"M6581.h"
+
+1079545412 c:\mycode\win64\sfont.h
+	<SDL.h>
+
+1125193396 c:\mycode\win64\sfont.c
+	<SDL.h>
+	<assert.h>
+	<stdlib.h>
+	"SFont.h"
+
+1124765314 c:\mycode\win64\main.cpp
+	<cstdlib>
+	<stdlib.h>
+	<SDL.h>
+
+1150069965 c:\mycode\win64\disa.c
+	<SDL.h>
+	"AddressBus.h"
+	"CBM64.h"
+
+1139774954 c:\mycode\win64\mytypes.h
+
+1141808390 c:\mycode\win64\disa.h
+
+1150400628 c:\mycode\win64\gui.c
+	<io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<SDL.h>
+	"AddressBus.h"
+	"gfx.h"
+
+1150349533 c:\mycode\win64\gui.h
+
+1150258411 c:\mycode\win64\tape.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"gfx.h"
+	"gui.h"
+	"AddressBus.h"
+
+1144996805 c:\mycode\win64\tape.h
+
+1144218828 c:\mycode\win64\gfx.h
+
+1144218390 c:\mycode\win64\gfx.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<SDL.h>
+	"gui.h"
+	"AddressBus.h"
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\addressbus.c
+	"gfx.h"
+	"CBM64.h"
+	"M6510.h"
+	"M6569.h"
+	"M6526.h"
+	"M6581.h"
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\gfx.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\cbm64.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\m6510.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\m6569.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\m6526.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\m6581.h
+
+1372625410 source:c:\users\michael\downloads\mgexamples\win64\cbm64.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<SDL.h>
+	"gfx.h"
+	"gui.h"
+	"AddressBus.h"
+	"M6510.h"
+	"M6569.h"
+	"M6526.h"
+	"M6581.h"
+	"tape.h"
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\gui.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\addressbus.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\tape.h
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\disa.c
+	<SDL.h>
+	"AddressBus.h"
+	"CBM64.h"
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\gfx.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<SDL.h>
+	"gui.h"
+	"AddressBus.h"
+
+1372634360 source:c:\users\michael\downloads\mgexamples\win64\gui.c
+	<io.h>
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	<SDL.h>
+	"AddressBus.h"
+	"gfx.h"
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\m6510.c
+	"CBM64.h"
+	"AddressBus.h"
+	"Disa.h"
+	"Admodes.h"
+	"Opcodes.h"
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\disa.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\admodes.h
+
+1372619988 c:\users\michael\downloads\mgexamples\win64\opcodes.h
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\m6526.c
+	"AddressBus.h"
+	"CBM64.h"
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\m6569.c
+	"AddressBus.h"
+	"CBM64.h"
+	"gfx.h"
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\m6581.c
+
+1372619988 source:c:\users\michael\downloads\mgexamples\win64\tape.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"gfx.h"
+	"gui.h"
+	"AddressBus.h"
+

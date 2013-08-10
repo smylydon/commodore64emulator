@@ -1,0 +1,160 @@
+
+void LoadVick(dword *p);
+void SaveVick(dword *p);
+void DrawPlaneSprite(void);
+void DrawPlaneSpriteX2(void);
+void DrawMulticolorSprite(void);
+void DrawMulticolorSpriteX2(void);
+void DumpSprites(void);
+void DrawSprites(void);
+void InitVicTables(struct screen *S);
+void VicII(void);	
+	
+#define plotbit(col,off)\
+do{									\
+	if(*(spcoll+off)==0)					\
+	{								\
+		if(((*spdatp&sp2)==0)||(*(gcoll+off)==0))	\
+		{							\
+			*(mnshline+off)=col;				\
+		}							\
+	}								\
+	else								\
+	{								\
+		*sp2sp|=sp2|(sp2>>1);				\
+	}								\
+	if(*(gcoll+off)==1)					\
+	{								\
+		*sp2dat|=sp2;					\
+	}								\
+	*(spcoll+off)|=sp2;					\
+}while(0)
+
+#define STD_SPRITE(f3)\
+do{									\
+	if(bitpattern&0x80)					\
+	{								\
+		plotbit(f3,0);					\
+	}								\
+	if(bitpattern&0x40)					\
+	{								\
+		plotbit(f3,1);					\
+	}								\
+	if(bitpattern&0x20)					\
+	{								\
+		plotbit(f3,2);					\
+	}								\
+	if(bitpattern&0x10)					\
+	{								\
+		plotbit(f3,3);					\
+	}								\
+	if(bitpattern&0x08)					\
+	{								\
+		plotbit(f3,4);					\
+	}								\
+	if(bitpattern&0x04)					\
+	{								\
+		plotbit(f3,5);					\
+	}								\
+	if(bitpattern&0x02)					\
+	{								\
+		plotbit(f3,6);					\
+	}								\
+	if(bitpattern&0x01)					\
+	{								\
+		plotbit(f3,7);					\
+	}								\
+	mnshline+=8;							\
+	gcoll+=8;							\
+}while(0)
+
+#define MCM_SPRITE(f3,f2,f1)\
+do{								\
+	if(bitpattern&0x80)				\
+	{							\
+		if(bitpattern&0x40)			\
+		{						\
+			plotbit(f2,0);			\
+			plotbit(f2,1);			\
+		}						\
+		else						\
+		{						\
+			plotbit(f3,0);			\
+			plotbit(f3,1);			\
+		}						\
+	}							\
+	else							\
+	{							\
+		if(bitpattern&0x40)			\
+		{						\
+			plotbit(f1,0);			\
+			plotbit(f1,1);			\
+		}						\
+	}							\
+	if(bitpattern&0x20)				\
+	{							\
+		if(bitpattern&0x10)			\
+		{						\
+			plotbit(f2,2);			\
+			plotbit(f2,3);			\
+		}						\
+		else						\
+		{						\
+			plotbit(f3,2);			\
+			plotbit(f3,3);			\
+		}						\
+	}							\
+	else							\
+	{							\
+		if(bitpattern&0x10)			\
+		{						\
+			plotbit(f1,2);			\
+			plotbit(f1,3);			\
+		}						\
+	}\
+	if(bitpattern&0x08)				\
+	{							\
+		if(bitpattern&0x4)			\
+		{						\
+			plotbit(f2,4);			\
+			plotbit(f2,5);			\
+		}						\
+		else						\
+		{						\
+			plotbit(f3,4);			\
+			plotbit(f3,5);			\
+		}						\
+	}							\
+	else							\
+	{							\
+		if(bitpattern&0x04)			\
+		{						\
+			plotbit(f1,4);			\
+			plotbit(f1,5);			\
+		}						\
+	}							\
+	if(bitpattern&0x02)				\
+	{							\
+		if(bitpattern&0x01)			\
+		{						\
+			plotbit(f2,6);			\
+			plotbit(f2,7);			\
+		}						\
+		else						\
+		{						\
+			plotbit(f3,6);			\
+			plotbit(f3,7);			\
+		}						\
+	}							\
+	else							\
+	{							\
+		if(bitpattern&0x01)			\
+		{						\
+			plotbit(f1,6);			\
+			plotbit(f1,7);			\
+		}						\
+	}\
+	mnshline+=8;						\
+	spcoll+=8;						\
+	gcoll+=8;						\
+}while(0)

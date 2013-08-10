@@ -1,0 +1,44 @@
+# depslib dependency file v1.0
+1143875717 c:\mycode\gui\main.c
+	<stdlib.h>
+	<string.h>
+	"SDL/SDL.h"
+	"tape.h"
+	"gfx.h"
+	"gui.h"
+
+1143876274 c:\mycode\gui\tape.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"main.h"
+	"gfx.h"
+	"AddressBus.h"
+
+1142583951 c:\mycode\gui\tape.h
+
+1143875959 c:\mycode\gui\gui.h
+
+1143875959 c:\mycode\gui\gui.c
+	<io.h>
+	<string.h>
+	"SDL/SDL.h"
+	"AddressBus.h"
+	"main.h"
+	"gfx.h"
+
+1142979278 c:\mycode\gui\addressbus.h
+
+1143610950 c:\mycode\gui\main.h
+
+1142979278 c:\mycode\gui\addressbus.c
+	"AddressBus.h"
+
+1143676925 c:\mycode\gui\gfx.c
+	"SDL/SDL.h"
+	"gui.h"
+
+1139696298 c:\mycode\gui\mnsfont.h
+
+1143676925 c:\mycode\gui\gfx.h
+

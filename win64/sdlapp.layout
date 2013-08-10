@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!DOCTYPE CodeBlocks_layout_file>
+<CodeBlocks_layout_file>
+	<File name="AddressBus.c" open="0" top="0">
+		<Cursor position="1082" topLine="17"/>
+	</File>
+	<File name="gfx.c" open="0" top="0">
+		<Cursor position="346" topLine="0"/>
+	</File>
+	<File name="gui.c" open="0" top="0">
+		<Cursor position="5788" topLine="11"/>
+	</File>
+	<File name="gui.h" open="0" top="0">
+		<Cursor position="684" topLine="0"/>
+	</File>
+	<File name="main.c" open="0" top="0">
+		<Cursor position="22087" topLine="469"/>
+	</File>
+	<File name="tape.c" open="1" top="1">
+		<Cursor position="2134" topLine="55"/>
+	</File>
+	<Expand folder="/Sources"/>
+</CodeBlocks_layout_file>

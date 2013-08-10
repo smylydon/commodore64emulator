@@ -1,0 +1,39 @@
+
+		movb f0,%al
+		movb f1,%bl
+		movb f2,%cl
+		movb f3,%dl
+		
+		movb f0,%ah
+		movb f1,%bh
+		movb f2,%ch
+		movb f3,%dh
+		
+		swap eax
+		mov al,bitpattern
+		mov edi,gcol
+		mov esi,mnshline
+		
+		test al,0x80
+		jz	BITS701
+		mov [edi],0x11
+		test al,0x40
+		jz	BITS710
+		movl [esi],ebx
+		jmp bit510
+		
+BITS710:
+		mov [esi],ecx
+		jmp bits510
+		
+BITS701:
+		test al,0x40
+		jz	BITS700
+		movl [esi],ebx
+		jmp	BITS510
+		
+BITS700:
+		swap eax
+		mov [esi],eax
+		swap eax
+BITS510:

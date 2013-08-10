@@ -1,0 +1,10 @@
+extern void M6569Initialize(void);
+extern void M6569HardReset(void);
+extern void M6569SetCycles(unsigned int mycycles);
+extern void M6569UpDateVicII(void);
+extern char M6569ReadVIC(unsigned char address);
+extern void M6569WriteVIC(unsigned char data,unsigned char address);
+extern void M6569Execute(void);
+extern void M6569Dump(void);
+extern void M6569LoadVic(struct ioState *z);
+extern void M6569SaveVic(struct ioState *z);
